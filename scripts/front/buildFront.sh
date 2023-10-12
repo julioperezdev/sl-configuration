@@ -1,0 +1,1 @@
+docker build -t sl-webapp:0.1 ./../../sl-webapp/
