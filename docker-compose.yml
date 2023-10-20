@@ -3,7 +3,7 @@ version: '3.7'
 services:
   sl-database:
     container_name: sl-database
-    image: postgres:16.0
+    image: sl-database:0.1
     environment:
       POSTGRES_USER: sl-user
       POSTGRES_PASSWORD: sl-123
