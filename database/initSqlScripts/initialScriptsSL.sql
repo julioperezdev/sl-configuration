@@ -158,11 +158,11 @@ INSERT INTO SL.CURRENCY(ID, NAME, BUY_PRICE, SELL_PRICE, UPDATED_AT) VALUES
 ('f8f98478-5a7c-47aa-a473-ea044b7314b7','Real', 401, 402, '2023-10-10 01:00:00.000000');
 
 INSERT INTO SL.MULTIBOX (ID, UPDATED_AT, CURRENCY_BOX, OPERATION_ID, OPERATION_TYPE, QUANTITY, QUANTITY_OPERATION, MULTI_BOX_STATUS) VALUES 
-('218ab9a5-cbee-4dbc-8b34-3688a7868105','2023-10-10 01:00:00.000000','USD_HIGH', 'fdbd788a-0af2-4aa4-9275-2a510e98d50b', 'ingreso efectivo', 1001, 1001, 'resuelto'),
-('c2c25e87-5c32-4891-872d-a721feebe49c','2023-10-10 01:00:00.000000','USD_LOW', '3772f3e3-b18d-4380-a553-be56513a863a', 'ingreso efectivo', 1002, 1002, 'resuelto'),
-('7aac4b6c-f497-4a25-bf11-abb2562f9c30','2023-10-10 01:00:00.000000','EURO', '8fb768db-0beb-4526-92b0-ff176c01d7e3', 'ingreso efectivo', 1003, 1003, 'resuelto'),
-('b993ea2a-6f14-479f-8682-4ca0c163e7c5','2023-10-10 01:00:00.000000','REAL', '83d8cd3a-a42f-43ba-8b92-169494bac7bd', 'ingreso efectivo', 100004, 100004, 'resuelto'),
-('ba0987ce-ce1b-46c1-8157-5f1d94e86f88','2023-10-10 01:00:00.000000','PESO', '50c4aee6-c943-4689-ba8b-8bef38425bb6', 'ingreso efectivo', 10000005, 10000005, 'resuelto'),
+('218ab9a5-cbee-4dbc-8b34-3688a7868105','2023-10-10 01:00:00.000000','USD_HIGH', 'fdbd788a-0af2-4aa4-9275-2a510e98d50b', 'ingreso efectivo', 0, 0, 'resuelto'),
+('c2c25e87-5c32-4891-872d-a721feebe49c','2023-10-10 01:00:00.000000','USD_LOW', '3772f3e3-b18d-4380-a553-be56513a863a', 'ingreso efectivo', 0, 0, 'resuelto'),
+('7aac4b6c-f497-4a25-bf11-abb2562f9c30','2023-10-10 01:00:00.000000','EURO', '8fb768db-0beb-4526-92b0-ff176c01d7e3', 'ingreso efectivo', 0, 0, 'resuelto'),
+('b993ea2a-6f14-479f-8682-4ca0c163e7c5','2023-10-10 01:00:00.000000','REAL', '83d8cd3a-a42f-43ba-8b92-169494bac7bd', 'ingreso efectivo', 0, 0, 'resuelto'),
+('ba0987ce-ce1b-46c1-8157-5f1d94e86f88','2023-10-10 01:00:00.000000','PESO', '50c4aee6-c943-4689-ba8b-8bef38425bb6', 'ingreso efectivo', 0, 0, 'resuelto'),
 ('e1b68669-2220-42a5-8964-7d7c787a5fad','2023-10-10 01:00:00.000000','PESO_OFFICE', '260621c0-4918-443c-bf06-9a5ec1eba495', 'ingreso efectivo', 0, 0, 'resuelto');
 
 INSERT INTO SL.BALANCE(ID, PROFIT, OPERATION_ID, CREATED_AT, UPDATED_AT, OPERATION_TYPE, QUANTITY_OPERATION) VALUES
