@@ -16,7 +16,7 @@ services:
     restart: unless-stopped
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin4-container
+    container_name: pgadmin
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
@@ -25,11 +25,13 @@ services:
       - "8888:80"
   sl-api:
     image: sl-api:0.1
+    container_name: sl-api
     restart: always
     ports:
       - "18081:8081"
-  sl-webapp:
-    image: sl-webapp:0.1
+  sl-web:
+    image: sl-web:0.1
+    container_name: sl-web
     restart: always
     ports:
       - "13001:3001"
