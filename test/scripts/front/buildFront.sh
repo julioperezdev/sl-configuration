@@ -1,0 +1,1 @@
+docker build -t sl-web:0.1 ./../../../sl-web/

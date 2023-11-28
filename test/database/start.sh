@@ -1,0 +1,1 @@
+docker build -t sl-database:0.1 .
