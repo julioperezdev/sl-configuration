@@ -1,1 +1,1 @@
-docker build -t sl-database:0.1 .
+docker build -t sl-database-dev:0.1 .

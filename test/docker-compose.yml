@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   sl-database:
-    container_name: sl-database
-    image: sl-database:0.1
+    container_name: sl-database-test
+    image: sl-database-test:0.1
     environment:
       POSTGRES_USER: sl-user
       POSTGRES_PASSWORD: sl-123
@@ -14,24 +14,17 @@ services:
     ports:
       - "25432:5432"
     restart: unless-stopped
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: pgadmin
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: 1234
-    ports:
-      - "8888:80"
   sl-api:
-    image: sl-api:0.1
-    container_name: sl-api
+    image: sl-api-test:0.1
+    container_name: sl-api-test
     restart: always
     ports:
-      - "18081:8081"
+      - "28081:8081"
+    environment:
+        - URL_DATABASE=jdbc:postgresql://sl-database-test:5432/sl-db
   sl-web:
-    image: sl-web:0.1
-    container_name: sl-web
+    image: sl-web-test:0.1
+    container_name: sl-web-test
     restart: always
     ports:
-      - "13001:3001"
+      - "23001:3001"

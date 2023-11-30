@@ -1,1 +1,3 @@
-database/sl-data
+dev/database/sl-data
+test/database/sl-data
+prod/database/sl-data
