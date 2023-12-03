@@ -21,7 +21,7 @@ services:
     ports:
       - "28081:8081"
     environment:
-        - URL_DATABASE=jdbc:postgresql://sl-database-test:5432/sl-db
+      - URL_DATABASE=jdbc:postgresql://sl-database-test:5432/sl-db
   sl-web:
     image: sl-web-test:0.1
     container_name: sl-web-test

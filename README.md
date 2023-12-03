@@ -9,6 +9,9 @@ sudo SL@password0
 borrar todos los contenedores
 docker stop $(docker ps -a -q) 
 
+Log de un contenedor de Docker
+docker logs CONTAINER_ID
+
 eliminar carpeta con datos dentro
 rm -r my_directory
 
