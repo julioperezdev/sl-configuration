@@ -11,3 +11,5 @@ docker stop $(docker ps -a -q)
 
 eliminar carpeta con datos dentro
 rm -r my_directory
+
+source /etc/profile.d/maven.sh
